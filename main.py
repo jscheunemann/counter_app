@@ -15,7 +15,7 @@ app.include_router(
 )
 app.include_router(
     secure.router,
-    prefix="/api/v1/secure",
+    prefix="/api",
     dependencies=[Depends(get_user)]
 )
 
