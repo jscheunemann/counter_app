@@ -18,7 +18,7 @@ async def get_metadata(user: dict = Depends(get_user)):
 
 @router.post("/devices")
 async def get_devices(user: dict = Depends(get_user)):
-    return stored_data.output("queryresults_cves")
+    return stored_data.output("queryresults_plugins")
 
 @router.get("/devices/views/saved")
 async def get_saved_queries(user: dict = Depends(get_user)):
